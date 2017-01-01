@@ -274,11 +274,11 @@ def get_selection(client, aps, vpns, gsms, others):
 
     inp = []
     if formated_aps:
-        inp += formated_aps + [""]
+        inp += formated_aps + [" "]
     if vpns:
-        inp += formated_vpns + [""]
+        inp += formated_vpns + [" "]
     if gsms:
-        inp += formated_gsms + [""]
+        inp += formated_gsms + [" "]
     inp += formated_others
 
     inp_bytes = "\n".join([str(i) for i in inp]).encode(ENC)
